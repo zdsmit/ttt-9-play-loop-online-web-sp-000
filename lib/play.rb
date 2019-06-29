@@ -36,7 +36,7 @@ def turn(board)
 end
 
 def play(board)
-  until index.between?(0, 8) == "X" || index.between?(0, 8) == "O"
+  until board.between?(0, 8) == "X" || board.between?(0, 8) == "O"
     turn(board)
   end
 end
