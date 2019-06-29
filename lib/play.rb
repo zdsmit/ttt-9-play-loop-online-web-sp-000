@@ -36,7 +36,7 @@ def turn(board)
 end
 
 def play(board)
-  until board.between?(0, 8) == "X" || board.between?(0, 8) == "O"
+  9.times do
     turn(board)
   end
 end
